@@ -1,0 +1,12 @@
+@model MvcMovie.Models.Movie;
+
+@{Movie movie=(Movie) ViewData["movie"];}
+<ul> 
+    <li>ID: @movie.Id</li>
+    <li>Title: @movie.Title</li>
+    <li>Genre: @movie.Genre </li>
+    <li>Price: @movie.Price</li>
+    </ul>
+    <input type="number" name="quantity" min=0 max=5/>
+    <button type="button" class="btn btn-primary">Add</button>
+
